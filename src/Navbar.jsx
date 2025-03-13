@@ -5,7 +5,7 @@ const Navbar = () => {
        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            <p style={{color: "red", fontWeight: "Bold"}} className="navbar-brand-name" >MyApp</p>
+            <p style={{color: "red"}} className="navbar-brand-name" >MyApp</p>
           </a>
           <button
             className="navbar-toggler"

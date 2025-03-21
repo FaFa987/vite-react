@@ -1,16 +1,15 @@
-import Header from "./Header";
-import Content from "./Content";
+import Content from "./content";
+import DynamicNavbar from "./DynamicNavbar.jsx";
+import Header from "./Header.jsx";
 import Navbar from "./Navbar";
 
-export const App = () => { 
-
+export const App = () => {
   return (
     <>
-    <Navbar />
-    <Header />
-    <Content />
+      <DynamicNavbar />
+      <Header />
+      <Content />
     </>
   );
-
 };
 

@@ -1,9 +1,12 @@
+import AlertMessage from "./AlertMessage";
 
 
 export const App = () => {
   return (
     <>
-      <p>Hello word</p>
+    <AlertMessage alertType= "alert-success"/>
+    <AlertMessage alertType= "alert-danger"/>
+
     </>
   );
 };

@@ -1,4 +1,5 @@
 import AlertMessage from "./AlertMessage";
+import { Card } from "./Card";
 
 
 export const App = () => {
@@ -9,13 +10,17 @@ export const App = () => {
   
   return (
     <>  
-    <AlertMessage alertType="alert-success" message ={apiResponse.message}/>
+
+    <Card />
+    <Card />
+
+    {/* <AlertMessage alertType="alert-success" message ={apiResponse.message}/>
 
     {
       apiResponse && apiResponse.status == 400 && (
         <AlertMessage alertType="alert-danger" message ={apiResponse.message}/>
       )
-    }
+    } */}
 
 
     </>

@@ -2,17 +2,21 @@ import AlertMessage from "./AlertMessage";
 
 
 export const App = () => {
-
   const apiResponse = {
-    alertType : "alert-success",
-    message : "Operation was done!"
+    status : 400,
+    message : "Operation was unsuccess!",
   }
+  
   return (
-    <>
-    <AlertMessage alertType= {apiResponse.alertType} message ={apiResponse.message}/>
-    
-    <AlertMessage alertType= "alert-danger" message ="Unsuccessfull Operation!"/>
-    <AlertMessage alertType= "alert-info" message ="Information here"/>
+    <>  
+    <AlertMessage alertType="alert-success" message ={apiResponse.message}/>
+
+    {
+      apiResponse && apiResponse.status == 400 && (
+        <AlertMessage alertType="alert-danger" message ={apiResponse.message}/>
+      )
+    }
+
 
     </>
   );

@@ -12,9 +12,7 @@ export const Card = (props) => {
                     <li>some</li>
                 </ul>
 
-                <button className='btn btn-primary' onClick={ () => {
-                    alert(props.title)
-                }}>Click Here</button>
+                <button className='btn btn-primary' onClick={props.buttonAction} >Click Here</button>
             </div>
             
         </div>

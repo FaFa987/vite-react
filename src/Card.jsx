@@ -1,18 +1,20 @@
 import React from 'react';
 
-export const Card = () => {
+export const Card = (props) => {
     return (
         <div>
 
             <div className='card container my-5' style={ {width : "18rem"}}>
-                <img src= "https://placehold.co/150" />
-                <div className='card-title'>John Doe</div>
-                <div className='card-text'>Some example text.</div>
+                <img src= {props.img} />
+                <div className='card-title'>{props.title}</div>
+                <div className='card-text'>{props.description}</div>
                 <ul>
                     <li>some</li>
                 </ul>
 
-                <a href="#" class="btn btn-primary">See Profile</a>
+                <button className='btn btn-primary' onClick={ () => {
+                    alert(props.title)
+                }}>Click Here</button>
             </div>
             
         </div>

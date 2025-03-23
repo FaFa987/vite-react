@@ -11,8 +11,8 @@ export const App = () => {
   return (
     <>  
 
-    <Card />
-    <Card />
+    <Card title="Demo1" description="Demo description 1" img="https://placehold.co/150" />
+    <Card title="Demo2" description="Demo description 2" img="https://placehold.co/200" />
 
     {/* <AlertMessage alertType="alert-success" message ={apiResponse.message}/>
 

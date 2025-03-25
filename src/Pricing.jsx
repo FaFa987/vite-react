@@ -26,6 +26,7 @@ const Pricing = () => {
         </div>
         <div className="col-md-4">
           <Card
+            cardStyle="border-secondary bg-info text-white"
             title="Pro Plan"
             description="Ideal for small teams or startups."
             image="https://placehold.co/150"

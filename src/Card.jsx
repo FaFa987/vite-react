@@ -1,20 +1,34 @@
 import React from 'react';
 
-export const Card = ({img, title, description, buttonAction}) => {
-    return (
-        <div>
+const Card = ({
+  title,
+  description,
+  image,
+  buttonAction,
+  buttonText,
+  cardStyle,
+}) => {
+  // const handleClick = (msg) => {
+  //     alert(msg);
+  //     console.log(msg);
+  //   }
 
-            <div className='card container my-5' style={ {width : "18rem"}}>
-                <img src= {img} />
-                <div className='card-title'>{title}</div>
-                <div className='card-text'>{description}</div>
-                <ul>
-                    <li>some</li>
-                </ul>
+  return (
+    <div className={`card my-3 ${cardStyle}`}>
+      <img src={image} alt="" />
+      <div className="card-body">
+        <h5 className="card-title">{title}</h5>
+        <p className="card-text">{description}</p>
 
-                <button className='btn btn-primary' onClick={buttonAction} >Click Here</button>
-            </div>
-            
-        </div>
-    );
+        <ul>
+          <li>Some data</li>
+        </ul>
+      </div>
+      <button className="btn btn-primary" onClick={buttonAction}>
+        {buttonText}
+      </button>
+    </div>
+  );
 };
+
+export default Card;
